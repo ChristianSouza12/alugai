@@ -1,0 +1,579 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    list-style: none;
+    border: none;
+    text-decoration: none;
+
+
+
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+
+}
+
+html{
+    width: 100vw;
+    height: 100vh;
+    font-size: 62.5%;
+    overflow-x: hidden;
+    background-color: #839aff;
+}
+
+/* MENU */
+
+.content{
+    width: 100vw;
+    height:70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #839aff;
+    position: fixed;
+    padding-left: 30rem;
+}
+
+.logo{
+    width: 70px;
+    height: auto;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.logo h3{
+    color:white;
+    font-size: 1.6rem;
+}
+
+.logo img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+   padding:7%;
+}
+
+.content .list-menu{
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.content .list-menu li a {
+   padding : 3rem 1rem 2rem 1rem;
+   color:rgb(255,255,255);
+    font-weight: 500;
+   font-size: 1.8rem;
+   text-transform: uppercase;
+   transition: all 200ms ease-in;
+
+}
+.content .list-menu li a:hover{
+    background-color: #7474ce;
+    border-bottom: 4px solid #000080;
+    color:#000080;
+
+}
+
+/* PRIMEIRO SEÇÃO*/
+
+
+.first-section{
+    height: 100vh;
+    background-image:linear-gradient(rgba(29,29,29,0.8),rgba(29,29,29,08)) ,url(./assets/background.jpg);
+    background-position:center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 5px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.first-section .conteudo-principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.first-section h1{
+    color:#839aff;
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+.first-section h1 spam{
+    
+        color:white;
+    
+}
+
+.first-section h2{
+    color:rgb(177,177,177);
+    font-size: 3rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+
+}
+
+.btn button{
+    width: 230px;
+    height: 60px;
+    cursor:pointer;
+    text-transform: uppercase;
+    border-radius: 10px;
+    background-color: #839aff;
+    color:white;
+    font-weight: 700;
+    margin-top: 5rem;
+    transition:all 200ms ease-in;
+
+}
+.btn button:hover{
+    border:1px solid #839aff;
+    background-color: transparent;
+    color: #839aff;
+}
+.btn{
+    width: 480px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*  Sobre nós */
+
+.sobre-nos{
+    background-color:#7474ce;
+    width: 100%;
+    padding-bottom: 5rem;
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sobre-nos img{
+    width: 500px;
+    height: 350px;
+    margin-top: 10rem;
+    margin-left: 10rem;
+    border: 2px solid #839aff;
+}
+
+.main{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contentsobre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contentsobre h2{
+    font-size: 6rem;
+    margin-bottom: 1rem;
+    
+}
+
+.contentsobre p{
+    text-align: center;
+    font-size: 1.8rem;
+    width: 600px;
+    
+}
+
+/*  OPÇOES VEICULOS */
+
+.opcoes{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(116,116,206,0.5)
+}
+
+.opcoes h2{
+    font-size: 5rem;
+    color:white;
+    
+}
+
+.itens-opcoes{
+    width: 90%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(150px,350px));
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+}
+.itens-opcoes .info{
+    background-color: rgb(221,221,221);
+    border:none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:1.5rem;
+
+}
+
+.itens-opcoes img{
+    width: 100%;
+    height: 300px;
+}
+
+.itens-opcoes .info h3{
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    text-decoration: underline;
+    margin-bottom: 1rem;
+}
+
+.itens-opcoes .info h4{
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    margin-bottom: 0.6rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 150px 150px;
+    margin-left: 6rem;
+}
+
+.itens-opcoes .info h4 spam{
+    font-size: 1.6rem;
+    color:#585858;
+    margin-left: 1.5rem;
+}
+
+.itens-opcoes div{
+-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.42);
+-moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.42);
+box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.42);
+}
+
+.itens-opcoes .info .reservar{
+    width: 200px;
+    height: 35px;
+    margin-top: 0.5rem;
+    background-color: #839aff;
+    border-radius: 5px;
+    text-transform: capitalize;
+    cursor:pointer;
+    color: white;
+    transition: all 200ms ease-in;
+}
+.itens-opcoes .info .reservar:hover{
+    background-color: white;
+    color:#839aff;
+}
+
+.buttons button{
+    width: 230px;
+    height: 60px;
+    cursor:pointer;
+    text-transform: uppercase;
+    border-radius: 10px;
+    background-color: #839aff;
+    color:white;
+    font-weight: 700;
+    margin-top: 5rem;
+    transition:all 200ms ease-in;
+    margin-left: 3rem;
+}
+
+.buttons button:hover{
+    background-color: white;
+    color:#839aff;
+}
+
+
+/*  Contatos */
+
+.contatos{
+    width: 100%;
+    background-color: #000080;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    color:white;
+    padding-bottom: 3rem;
+}
+
+.contatos h3{
+    font-size: 5rem;
+    margin-bottom: 3rem;
+
+}
+
+.contatos-secao{
+    width: 650px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+}
+
+.contatos-secao i{
+    margin-right: 1rem;
+
+}
+
+.contatos-secao div{
+    cursor: pointer;
+    transition:all 200ms ease-in
+}
+.contatos-secao div:hover{
+    color:#839aff
+}
+
+footer{
+    height: 25px;
+    background-color:rgba(116,116,206,0.5) ;
+    color:white;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*  Responsividade */
+
+
+@media (max-width :1200px) {
+    .main{
+        display: block;
+
+    }
+    .content{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 12%;
+        padding-left: 0px;
+
+
+    }
+    .sobre-nos img{
+        width: 600px;
+        margin-left: -2px;
+    }
+}
+
+@media(max-width:992px) {
+    html{
+        font-size: 50%;
+    }
+
+}
+
+@media(max-width:768px){
+    html{
+        font-size: 45%;
+    }
+    .content{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding:0px 40px;
+    }
+    .content .list-menu{
+        display: none;
+
+    }
+    .one,
+    .two,
+    .three{
+        width: 80%;
+        height: 2px;
+        background-color: white;
+        margin:6px auto;
+        transition: 0.5s;
+    }
+    .menu-toggle{
+        width:30px ;
+        height: 30px;
+    }
+
+    .content.on{
+        position: fixed;
+        top:0;
+        left:0;
+        bottom:0;
+        width: 100vw;
+        height:100vh;
+        background-color: rgba(30,30,30,0.8);
+        z-index: 10;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition:all  0.6s;
+    }
+    .content.on .logo{
+        display: none;
+    }
+    .content.on .menu-toggle{
+        position: absolute;
+        right:40px;
+        top:20px;
+    }
+
+    .content.on .list-menu{
+        display: block;
+
+    }
+    .content.on .list-menu li{
+        display: flex;
+        justify-content: center;
+    }
+    .content.on .list-menu li a {
+        font-size: 2rem;
+    }
+
+    .content.on .menu-toggle .two{
+        opacity: 0;
+    }
+
+    .content.on .menu-toggle .one{
+        transform: rotate(45deg) translate(5px , -8px);
+    }
+    .content.on .menu-toggle .three{
+        transform: rotate(-45deg) translate(20px , -6px);
+    }
+
+
+    .itens-opcoes{
+        grid-template-columns: repeat(2, minmax(50px,350px) );
+    }
+    .itens-opcoes .info h4{
+        margin-left: 12rem;
+    }
+
+    .contatos-secao{
+        display: block;
+        align-items: center;
+        font-size: 2rem;
+    }
+    .contatos-secao div{
+        margin:1rem;
+    }
+}
+
+@media (max-width:600px){
+    .conteudo-principal h1 {
+        width: 500px;
+        text-align: center;
+        font-size: 4rem;
+
+    }
+    .conteudo-principal h2{
+        font-size: 2rem;
+    }
+
+    .itens-opcoes{
+        grid-template-columns: repeat(auto-fit,minmax(50px,350px));
+    }
+    .sobre-nos img{
+        width: 400px;
+        height: 250px;
+        margin-left: 10px;
+    }
+    .sobre-nos p {
+        text-align: center;
+        width: 400px;
+    }
+
+    .contatos-secao{
+        width: 300px;
+    }
+}
+
+@media(max-width:500px){
+    .btn{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 150px;
+
+    }
+
+   
+
+    
+
+    .btn button {
+        font-size: 1.5rem;
+        width: 100%;
+    }
+
+    .conteudo-principal h1{
+        width: 350px;
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .conteudo-principal h2{
+        width: 200px;
+        font-size: 2rem;
+        text-align: center;
+    }
+}
+
+@media ( max-width:395px){
+    .sobre-nos img{
+        width: 250px;
+        height: auto;
+        margin-left: 10px;
+    }
+
+    .contentsobre p{
+        text-align: center;
+        width: 250px;
+    }
+
+    .itens-opcoes{
+        width: 50%;
+        justify-content: center;
+        grid-template-columns: repeat(auto-fit,minmax(50px,350px));
+    }
+
+    .itens-opcoes img{
+        width: 100%;
+        height: auto;
+    }
+
+    .itens-opcoes div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .itens-opcoes .info{
+        width: 100%;
+        height: 150px;
+
+    }
+
+    .itens-opcoes .info h4{
+        grid-template-columns: 93px 150px;
+    }
+    .itens-opcoes .info .reservar{
+        width: 100%;
+        font-size: 1.5rem;
+
+    }
+}
